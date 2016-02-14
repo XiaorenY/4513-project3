@@ -7,7 +7,7 @@ CC = gcc
 
 all: nutella
 
-nutella: nutella.c msock.o msock.h
+nutella: nutella.c msock.o msock.h pnode.h tcptalk.h
 	$(CC) -o nutella nutella.c msock.o
 
 msock: msock.c msock.h
